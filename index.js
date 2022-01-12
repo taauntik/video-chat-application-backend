@@ -2,6 +2,7 @@ const app = require("express")();
 const server = require("http").createServer(app);
 const cors = require("cors");
 
+app.use(cors());
 const io = require("socket.io")(server, {
   cors: {
     origin: "https://video-chat-project.netlify.app/",
@@ -9,7 +10,6 @@ const io = require("socket.io")(server, {
   },
 });
 
-app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
