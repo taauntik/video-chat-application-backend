@@ -8,6 +8,7 @@ const io = require("socket.io")(server, {
     origin: "*",
     methods: ["GET", "POST"],
   },
+  transports: ["websocket"],
 });
 
 const PORT = process.env.PORT || 5000;
