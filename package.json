@@ -13,7 +13,6 @@
     "@vercel/node": "^1.12.1",
     "cros": "^1.0.1",
     "express": "^4.17.2",
-    "react-copy-to-clipboard": "^5.0.4",
     "socket.io": "^4.4.1"
   }
 }
