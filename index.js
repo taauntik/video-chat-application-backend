@@ -7,9 +7,9 @@ const io = require("socket.io")(server, {
   cors: {
     origin: "https://video-chat-project.netlify.app/",
     methods: ["GET", "POST"],
+    transports: ["websocket"],
   },
 });
-
 
 const PORT = process.env.PORT || 5000;
 
