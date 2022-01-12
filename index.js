@@ -5,9 +5,8 @@ const cors = require("cors");
 app.use(cors());
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://video-chat-project.netlify.app/",
+    origin: "*",
     methods: ["GET", "POST"],
-    transports: ["websocket"],
   },
 });
 
